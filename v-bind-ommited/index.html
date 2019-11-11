@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang-"ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>v-bind省略記法</title>
+  <!-- CSS読み込み -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="app">
+    <a v-bind:href="url" target="_blank" rel="noopener">Google</a>
+    <br>
+    <a :href="url">Google</a>
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- API -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/axios@0.19.0/dist/axios.min.js"></script> -->
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>

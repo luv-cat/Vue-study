@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang-"ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>v-once</title>
+  <!-- CSS読み込み -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="app">
+    <!-- v-onceによる静的コンテンツ -->
+    <p v-once>
+      {{ message }}
+    </p>
+    <!-- 縛りのない動的コンテンツ -->
+    <p>
+      {{ message }}
+    </p>
+    <button v-on:click="clickHandler">
+      Click!
+    </button>
+
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>

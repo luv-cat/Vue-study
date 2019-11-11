@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang-"ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>v-html</title>
+  <!-- CSS読み込み -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="app">
+    <!-- v-htmlの利用なし -->
+    <p>
+      {{ message }}
+    </p>
+    <!-- v-htmlの利用 -->
+    <p v-html="message"></p>
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>

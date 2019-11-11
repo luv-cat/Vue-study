@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang-"ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+  <!-- CSS読み込み -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="app">
+    <p>
+      {{ message }}
+    </p>
+    <p>
+      {{ number + 1}}
+    </p>
+    <p>
+      {{ message.split('').reverse().join('') }}
+    </p>
+    <p>
+      {{ okay ? 'Yes' : 'No' }}
+    </p>
+    <p>
+      <!-- NGパターン -->
+      <!-- {{ var x = 1 }} -->
+      <!-- {{ if(ok) { return message } }} -->
+      <!-- 可能な記述 -->
+      <!-- 三項演算子 -->
+      {{ ok ? message :'' }}
+    </p>
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>
