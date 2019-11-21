@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang-"ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+</head>
+
+<body>
+  <div id="app">
+    <p>
+      <!-- キャメルケースによる記述 -->
+      Hello <span v-bind:style="{ color: color, fontSize: fontSize +'px'}">Vue.js!</span>
+      <!-- キャメルケースを使わない場合は、クォートで囲む
+      Hello <span v-bind:style="{ color: color, 'font-size': fontSize +'px'}">Vue.js!</span>
+    -->
+    </p>
+
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>
