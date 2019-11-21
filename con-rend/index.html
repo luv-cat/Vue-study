@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang-"ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>v-ifとv-else</title>
+  <!-- CSS読み込み -->
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <div id="app">
+    <p v-if="toggle">
+      YES!!
+    </p>
+    <p v-else>
+      NO!!!
+    </p>
+
+    <button v-on:click="onClick">変更</button>
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>
