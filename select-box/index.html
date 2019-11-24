@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang-"ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>select box</title>
+</head>
+
+<body>
+  <div id="app">
+    <select v-model="selected">
+      <option disable value="">Please Select One</option>
+      <option>Red</option>
+      <option>Green</option>
+      <option>Blue</option>
+      <option value="ABC">TEST</option>
+    </select>
+
+    <p>
+      {{ selected }}
+    </p>
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>
