@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang-"ja">
+<head>
+  <meta charset="utf-8">
+  <title>trim</title>
+</head>
+
+<body>
+  <p>
+  trimオプションについて <br>
+  trimを付けると入力値の前後の空白を削除する<br>
+  全角のスペースも取り除かれる
+  </p>
+  <div id="app">
+    <p>
+      <input type="text" v-model.trim="message">
+    </p>
+    <pre>{{ $data }}</pre>
+
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>
