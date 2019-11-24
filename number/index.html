@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang-"ja">
+<head>
+  <meta charset="utf-8">
+  <title>numberオプション</title>
+</head>
+
+<body>
+  <p>
+  .numberオプションについて<br>
+  数値へ型変換する
+  </p>
+  <div id="app">
+    numberオプション有り
+    <p>
+      <input type="number" v-model.number="age">
+    </p>
+    <p>{{ age + 10 }}</p>
+    numberオプション無し
+    <p>
+      <input type="number" v-model="num">
+    </p>
+    <p>{{ num + 10 }}</p>
+
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>
