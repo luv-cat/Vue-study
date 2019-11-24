@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang-"ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>Radio button</title>
+</head>
+
+<body>
+  <div id="app">
+    <input type="radio" id="red" value="Red" v-model="color">
+    <label for="Red">Red</label>
+    <input type="radio" id="green" value="Green" v-model="color">
+    <label for="Green">Green</label>
+    <input type="radio" id="blue" value="Blue" v-model="color">
+    <label for="Blue">Blue</label>
+
+    <p>{{ color }}</p>
+
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>
