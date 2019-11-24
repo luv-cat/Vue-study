@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang-"ja">
+<head>
+  <meta charset="utf-8">
+  <title>lazy</title>
+</head>
+
+<body>
+  <p>
+  lazyはバインドのタイミングを遅延させる<br>
+  項目に注目していなければバインドされない
+  </p>
+  <div id="app">
+    <input type="text" v-model.lazy="message">
+    <br>
+    <p>
+      {{ message }}
+    </p>
+
+  </div>
+  <!-- Vue読み込み -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <!-- 記述したJSファイル読み込み -->
+  <script src="index.js"></script>
+</body>
+
+</html>
